@@ -1,17 +1,17 @@
 # HTML CSS 10 PRACTICE PROJECT
 
-### Project that we are going to build in this complete practice course
+### Tugasthat we are going to build in this complete practice course
 
-- Project 1 - Tribute Website
-- Project 2 - Job Application
-- Project 3 - Parallax Wesbite
-- Project 4 - Landing Page
-- Project 5 - Restaurant Website
-- Project 6 - Music Website
-- Project 7 - Youtube Clone
-- Project 8 - Javascript Documentation
-- Project 9 - Blog Wesbite
-- Project 10 - Portfolio Website
+- Tugas1 - Tribute Website
+- Tugas2 - Job Application
+- Tugas3 - Parallax Wesbite
+- Tugas4 - Landing Page
+- Tugas5 - Restaurant Website
+- Tugas6 - Music Website
+- Tugas7 - Youtube Clone
+- Tugas8 - Javascript Documentation
+- Tugas9 - Blog Wesbite
+- Tugas10 - Portfolio Website
 
 #### All Image Assets and Icons will Provided in Video Description
 

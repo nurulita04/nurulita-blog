@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      :root {
+        --primary-color: #ff69b4;
+        --secondary-color: #ffb6c1;
+        --light-color: #fff0f5;
+        --dark-color: #8b008b;
+        --text-color: #333;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: var(--light-color);
+        background-image: linear-gradient(var(--secondary-color) 1px, transparent 1px),
+          linear-gradient(90deg, var(--secondary-color) 1px, transparent 1px);
+        background-size: 20px 20px;
+        color: var(--text-color);
+        line-height: 1.6;
+        position: relative;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 1.5rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: var(--dark-color);
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+      }
+
+      .hamburger span {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-content {
+        flex: 1;
+        padding-right: 2rem;
+      }
+
+      .hero-image {
+        flex: 1;
+        text-align: center;
+      }
+
+      .hero-image img {
+        max-width: 80%;
+        border-radius: 50%;
+        border: 5px solid var(--primary-color);
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: var(--dark-color);
+      }
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--dark-color);
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: var(--primary-color);
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+
+      .btn:hover {
+        background-color: var(--dark-color);
+        transform: translateY(-3px);
+      }
+
+      .section {
+        margin: 4rem 0;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 2rem;
+        position: relative;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background-color: var(--primary-color);
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .skill {
+        background-color: var(--secondary-color);
+        padding: 0.5rem 1.5rem;
+        border-radius: 20px;
+        font-weight: bold;
+        color: var(--dark-color);
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .project-card {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-img {
+        height: 200px;
+        background-color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+      }
+
+      .project-content {
+        padding: 1.5rem;
+      }
+
+      .project-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        color: var(--dark-color);
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .form-group textarea {
+        height: 150px;
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+      }
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+
+      .social-links a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color);
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background-color: var(--dark-color);
+        color: white;
+      }
+
+      @media (max-width: 768px) {
+        .nav-container {
+          flex-direction: column;
+        }
+
+        nav {
+          margin-top: 1rem;
+        }
+
+        .hamburger {
+          display: flex;
+          position: absolute;
+          top: 1.5rem;
+          right: 1.5rem;
+        }
+
+        nav ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          margin-top: 1rem;
+        }
+
+        nav ul.show {
+          display: flex;
+        }
+
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-content {
+          padding-right: 0;
+          margin-bottom: 2rem;
+        }
+
+        .projects {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container nav-container">
+        <div class="logo">My Portfolio</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="hero" id="about">
+        <div class="hero-content">
+          <h1>Hello, I'm <span style="color: var(--primary-color)">Your Name</span></h1>
+          <p>
+            I'm a passionate web developer focused on creating beautiful and functional websites. With
+            expertise in HTML, CSS, and JavaScript, I bring creative ideas to life.
+          </p>
+          <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="hero-image">
+          <img src="/api/placeholder/400/400" alt="Profile Image" />
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">React</div>
+          <div class="skill">Node.js</div>
+          <div class="skill">UI/UX Design</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">Git</div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects">
+          <div class="project-card">
+            <div class="project-img">Project 1</div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Website</h3>
+              <p>
+                A fully responsive e-commerce website with shopping cart functionality built using
+                HTML, CSS, and JavaScript.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">Project 2</div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Template</h3>
+              <p>
+                A clean and modern portfolio template for creative professionals built with HTML, CSS,
+                and JavaScript.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">Project 3</div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p>
+                A task management application with CRUD operations built using JavaScript and local
+                storage.
+              </p>
+              <a href="#" class="btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <div class="social-links">
+          <a href="#"><i>FB</i></a>
+          <a href="#"><i>TW</i></a>
+          <a href="#"><i>IG</i></a>
+          <a href="#"><i>LI</i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("show");
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 70,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            const menu = document.getElementById("menu");
+            if (menu.classList.contains("show")) {
+              menu.classList.remove("show");
+            }
+          }
+        });
+      });
+
+      // Form validation
+      const form = document.querySelector(".contact-form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        if (!name || !email || !message) {
+          alert("Please fill out all fields");
+          return;
+        }
+
+        // Here you would normally send the form data to a server
+        alert("Message sent successfully!");
+        form.reset();
+      });
+
+      // Add active class to current section in navigation
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav ul li a");
+
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= sectionTop - 150) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").substring(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
