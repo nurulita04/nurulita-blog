@@ -12,7 +12,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.hero_section {
+.home_section {
   background-image: url(images/developer.png);
   min-height: 100vh;
   background-position: center;
@@ -110,7 +110,7 @@ footer {
   color: white;
 }
 @media (max-width: 786px) {
-  .hero_section {
+  .home_section {
     min-height: 50vh;
   }
   .text_container {

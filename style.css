@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 :root {
-  --lighting-color: #c04784; /* Pink soft */
-  --dark-color: #eca2ad; /* Light Pink */
-  --darker-color: #ff69b4; /* Hot Pink (sedikit lebih kuat dari yang lain) */
-  --secondary-color: #fff700;
+  --lighting-color: #5c3b1e; 
+  --dark-color: #937a61; 
+  --darker-color: #5c3b1e; 
+  --secondary-color: rgb(255, 218, 138);
 }
 * {
   margin: 0;
@@ -56,7 +56,8 @@ nav {
 }
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  padding: 1rem 2rem;
 }
 nav li {
   font-size: 1.8rem;
@@ -70,25 +71,26 @@ nav li:hover {
 .logo {
   font-size: 2rem;
   font-weight: 700;
+  /* padding: 0 2rem; */
 }
 
-#hero {
+#home {
   background: var(--dark-color);
-  padding: 4rem 0;
+  padding: 6rem 0;
   border-bottom: 4px solid var(--lighting-color);
   max-height: 100vh;
 }
-#hero .container {
+#home .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.hero_content {
+.home_content {
   display: grid;
   place-items: center;
 }
 
-#hero h1 {
+#home h1 {
   font-size: 3rem;
   font-weight: bold;
 }
@@ -102,7 +104,7 @@ nav li:hover {
   font-size: 5rem;
 }
 
-#hero h2 {
+#home h2 {
   font-size: 4rem;
   font-weight: bold;
 
@@ -192,7 +194,7 @@ nav li:hover {
 }
 
 #contact h2 {
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
   margin: 2rem 0;
 }
@@ -201,7 +203,7 @@ nav li:hover {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
 }
 
@@ -211,7 +213,35 @@ nav li:hover {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
-.contact_way {
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.socials .social-item {
+  display: block;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #432a14; /* ganti border jadi background */
+  color: #fff; /* teks putih supaya kontras */
+  text-align: center;
+  line-height: 50px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.socials .social-item:hover {
+  background: #c98f25; 
+  color: #fff;
+}
+
+/* .contact_way {
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -231,7 +261,7 @@ nav li:hover {
   display: grid;
   margin: 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-}
+} */
 
 /* Footer */
 
@@ -239,7 +269,7 @@ footer {
   background: var(--darker-color);
   padding: 2rem;
   color: white;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -249,10 +279,10 @@ footer {
   html {
     font-size: 40%;
   }
-  #hero .container {
+  #home .container {
     flex-direction: column;
   }
-  .hero_image {
+  .home_image {
     display: grid;
     place-items: center;
   }
@@ -264,10 +294,10 @@ footer {
   html {
     font-size: 32%;
   }
-  #hero .container {
+  #home .container {
     flex-direction: column;
   }
-  .hero_image {
+  .home_image {
     display: grid;
     place-items: center;
   }

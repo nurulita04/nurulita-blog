@@ -44,14 +44,14 @@ nav {
   font-size: 32px;
 }
 
-/* Hero Section */
-.hero {
+/* home Section */
+.home {
   display: flex;
   gap: 100px;
   justify-content: center;
   align-items: center;
 }
-.hero_content {
+.home_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -63,7 +63,7 @@ nav {
   align-self: flex-start;
 }
 
-.hero_content h1 {
+.home_content h1 {
   font-size: 72px;
   line-height: 1.2;
   font-weight: 400;
@@ -188,23 +188,23 @@ footer {
   font-size: 32px;
 }
 @media (max-width: 786px) {
-  .hero {
+  .home {
     flex-direction: column;
   }
 
-  .hero_image {
+  .home_image {
     display: flex;
     justify-content: center;
   }
-  .hero_image img {
+  .home_image img {
     width: 80%;
   }
-  .hero_content {
+  .home_content {
     gap: 10px;
 
     padding: 0 20px;
   }
-  .hero_content h1 {
+  .home_content h1 {
     font-size: 32px;
   }
   .features {
