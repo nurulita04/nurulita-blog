@@ -171,6 +171,7 @@ nav li:hover {
 .grid_item {
   display: grid;
   place-items: center;
+  margin: 2rem;
 }
 
 .card {
