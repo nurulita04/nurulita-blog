@@ -1,90 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tugas 1 - Review Jurnal Sistem Pakar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <a href="../index.html" class="back-button">
+      <i class="fas fa-arrow-left"></i>
+      Kembali ke Portfolio
+    </a>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <div class="content">
+      <section class="top_section">
+        <div>
+          <h4>Review Jurnal</h4>
+          <h1>Sistem Pakar Identifikasi Jenis Kulit Wajah Dengan Metode Certainty Factor</h1>
+        </div>
+      </section>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Tribute Website | A.P. J Abdul Kalam</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="content">
-        <section class="top_section">
-          <div class="image_container">
-            <img src="./images/apj.jpg" alt="tribute" />
+      <section class="section-card background_section">
+        <h3><i class="fas fa-lightbulb icon-accent"></i>Latar Belakang</h3>
+        <p>Banyak orang melakukan perawatan wajah tanpa mengetahui jenis kulitnya, yang bisa menyebabkan masalah seperti jerawat atau iritasi. 
+          Sementara, akses ke dokter kulit terbatas oleh waktu, biaya, dan jarak. Untuk itu, dibutuhkan sistem yang dapat membantu 
+          mengidentifikasi jenis kulit secara cepat dan akurat.</p>
+        <p>Penelitian ini mengembangkan sistem pakar berbasis web menggunakan metode Certainty Factor sebagai solusi untuk menjawab permasalahan tersebut.</p>
+      </section>
+
+      <section class="section-card objectives_section">
+        <h3><i class="fas fa-rocket icon-accent"></i>Tujuan Penelitian</h3>
+        <ul>
+          <li>Mengembangkan sistem pakar untuk membantu identifikasi jenis kulit wajah.</li>
+          <li>Meningkatkan efisiensi dan akurasi dalam proses diagnosis tanpa harus konsultasi langsung dengan dokter kulit.</li>
+          <li>Memberikan rekomendasi solusi dan produk perawatan berdasarkan hasil diagnosa.</li>
+          <li>Menggunakan pendekatan Certainty Factor untuk meniru cara berpikir seorang pakar.</li>
+        </ul>
+      </section>
+
+      <section class="section-card methodology_section">
+        <h3><i class="fas fa-cogs icon-accent"></i>Metode Penelitian</h3>
+        <p>Peneliti menggunakan metode Certainty Factor untuk mengukur tingkat kepastian antara gejala dan diagnosis.</p>
+        <p>Prosesnya terdiri dari dua tahap:</p>
+        <ol>
+          <li><strong>CF Parallel</strong>: <br> <code>CF<sub>paralel</sub> = CF<sub>user</sub> × CF<sub>pakar</sub></code></li>
+          <li><strong>CF Kombinasi</strong>: <br> <code>CF<sub>kombinasi</sub> = CF1 + CF2 × (1 - CF1)</code></li>
+        </ol>
+      </section>
+
+      <section class="section-card development_section">
+        <h3><i class="fas fa-code icon-accent"></i>Tahapan Pengembangan Sistem</h3>
+        <ol>
+          <li><strong>Perumusan Masalah dan Studi Literatur</strong></li>
+          <p>Pada tahap awal penelitian, dilakukan identifikasi permasalahan, penetapan judul, perumusan tujuan, penelaahan literatur terkait, serta pengumpulan informasi yang diperlukan.</p>
+          
+          <li><strong>Analisis dan Desain</strong></li>
+          <p>Analisis dan desain dilakukan dengan menjabarkan kebutuhan sistem pakar, membuat rancangan struktur data, merancang tampilan antarmuka pengguna, serta menyusun aturan alur penelusuran diagnosis.</p>
+          
+          <li><strong>Pemrograman (Coding) dengan Metode Certainty Factor</strong></li>
+          <p>Proses pemrograman meliputi penerjemahan rancangan sistem pakar ke dalam kode program, kemudian penerapan logika sistem berdasarkan metode Certainty Factor.</p>
+          
+          <li><strong>Pengujian Sistem dengan Blackbox Testing</strong></li>
+          <p>Pengujian bertujuan mengevaluasi fungsi sistem secara keseluruhan. Metode yang digunakan adalah blackbox testing, yaitu pengujian dengan cara mengamati output hasil eksekusi terhadap data uji tanpa melihat kode internal.</p>
+        </ol>
+      </section>
+
+      <section class="section-card implementation_section">
+        <h3><i class="fas fa-desktop icon-accent"></i>Implementasi Sistem</h3>
+        <p>Sistem mengidentifikasi jenis kulit wajah (normal, berminyak, kering, kombinasi, sensitif) berdasarkan input gejala pengguna.</p>
+        <img src="./images/implementasi sistem.png" alt="Implementasi Sistem" class="responsive-image"/>
+      </section>
+
+      <section class="section-card symptoms_section">
+        <h3><i class="fas fa-stethoscope icon-accent"></i>Gejala yang Digunakan</h3>
+        <p>Proses identifikasi jenis kulit wajah dimulai dengan menentukan bobot pada masing-masing gejala sebagai indikator. 
+          Gejala-gejala tersebut ditentukan berdasarkan karakteristik kulit yang menggambarkan jenis kulit tertentu. 
+          Beberapa contohnya adalah sebagai berikut:</p>
+        <img src="./images/gejala.png" alt="Gejala yang Digunakan" class="responsive-image"/>
+      </section>
+
+      <section class="section-card interface_section">
+        <h3><i class="fas fa-window-restore icon-accent"></i>Antarmuka Sistem</h3>
+        <p>Sistem terdiri dari halaman konsultasi, review gejala, dan hasil diagnosa yang ditampilkan dalam antarmuka berbasis web.</p>
+        <img src="./images/antarmuka.png" alt="Antarmuka Sistem" class="responsive-image"/>
+      </section>
+
+      <section class="section-card testing_section">
+        <h3><i class="fas fa-flask icon-accent"></i>Pengujian Sistem</h3>
+        <div class="testing_content">
+          <div class="testing_points">
+            <ol>
+              <li><strong>Blackbox Testing</strong>:
+                <p>Menunjukkan bahwa hasil dari penghitungan manual <strong>sama</strong> dengan hasil konsultasi sistem.</p>
+              </li>
+              <li><strong>Uji Responden</strong>:
+                <ul>
+                  <li>Jumlah Responden: 35 wanita</li>
+                  <li>Usia 15-50 tahun</li>
+                  <li>Melakukan perawatan dan didampingi dokter klinik kecantikan</li>
+                </ul>
+              </li>
+              <li><strong>Akurasi Diagnosa Sistem</strong>:
+                <ul>
+                  <li>Akurasi penuh: 91%</li>
+                  <li>Ketidaksesuaian: 9%</li>
+                </ul>
+              </li>
+            </ol>
           </div>
-          <div>
-            <h1>A . P . J Abdul Kalam</h1>
-            <h4>1931 - 2015</h4>
+          <div class="testing_image">
+            <img src="./images/hasil uji.png" alt="Hasil Uji Sistem" />
           </div>
-        </section>
-        <section class="about_section">
-          <h2>Missile Man of India</h2>
-          <p>
-            <b>Avul Pakir Jainulabdeen Abdul Kalam</b> 15 October 1931 – 27 July
-            2015) was an Indian aerospace scientist who served as the 11th
-            president of India from 2002 to 2007. He was born and raised in
-            Rameswaram, Tamil Nadu and studied physics and aerospace
-            engineering. He spent the next four decades as a scientist and
-            science administrator, mainly at the Defence Research and
-            Development Organisation (DRDO) and Indian Space Research
-            Organisation (ISRO) and was intimately involved in India's civilian
-            space programme and military missile development efforts.[1] He thus
-            came to be known as the Missile Man of India for his work on the
-            development of ballistic missile and launch vehicle
-            technology.[2][3][4] He also played a pivotal organisational,
-            technical, and political role in India's Pokhran-II nuclear tests in
-            1998, the first since the original nuclear test by India in 1974.
-          </p>
-        </section>
-        <section class="biography_section">
-          <h3>Biographies</h3>
-          <ul>
-            <li>
-              Eternal Quest: Life and Times of Dr Kalam by S Chandra; Pentagon
-              Publishers, 2002.
-            </li>
-            <li>
-              President A P J Abdul Kalam by R K Pruthi; Anmol Publications,
-              2002.
-            </li>
-            <li>
-              A P J Abdul Kalam: The Visionary of India by K Bhushan, G Katyal;
-              A P H Pub Corp, 2002.
-            </li>
-            <li>
-              A Little Dream (documentary film) by P. Dhanapal; Minveli Media
-              Works Private Limited, 2008.
-            </li>
-            <li>
-              The Kalam Effect: My Years with the President by P M Nair; Harper
-              Collins, 2008.
-            </li>
-            <li>
-              My Days With Mahatma Abdul Kalam by Fr A K George; Novel
-              Corporation, 2009.
-            </li>
-            <li>
-              A.P.J. Abdul Kalam: A Life by Arun Tiwari; Haper Collins, 2015.
-            </li>
-            <li>
-              The People's President: Dr A P J Abdul Kalam by S M Khan;
-              Bloomsbury Publishing, 2016.
-            </li>
-          </ul>
-        </section>
-        <footer>
-          <p>
-            Read more about A. P. J. Abdul Kalam on
-            <a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"
-              >Wikipedia.</a
-            >
-          </p>
-        </footer>
-      </div>
+        </div>
+      </section>
+
+      <section class="section-card advantages_section">
+        <h3><i class="fas fa-thumbs-up icon-accent"></i>Kelebihan Penelitian</h3>
+        <ul>
+          <li>Meningkatkan efisiensi dalam mengetahui jenis kulit wajah.</li>
+          <li>Meringankan beban layanan konsultasi dokter kulit.</li>
+          <li>Rekomendasi produk memberikan nilai tambah praktis bagi pengguna.</li>
+          <li>Dapat digunakan oleh klinik kecantikan maupun individu.</li>
+        </ul>
+      </section>
+
+      <section class="section-card limitations_section">
+        <h3><i class="fas fa-exclamation-triangle icon-accent"></i>Keterbatasan Penelitian</h3>
+        <ul>
+          <li><strong>Keterbatasan Data Awal</strong>: Jika data kurang akurat, maka hasil identifikasi jenis kulit bisa kurang tepat.</li>
+          <li><strong>Tidak Mengakomodasi Faktor Lingkungan</strong>: Jenis kulit wajah bisa berubah akibat perubahan lingkungan.</li>
+          <li><strong>Belum Verifikasi Menyeluruh oleh Dokter</strong>: Tidak semua hasil sistem dikonfirmasi langsung oleh pakar kulit.</li>
+          <li><strong>Basis Data Produk Minim</strong>: Produk perawatan yang direkomendasikan belum dijelaskan secara detail.</li>
+          <li><strong>Minimnya Integrasi dengan Teknologi Lain</strong>: Sistem belum terhubung dengan teknologi seperti AI atau aplikasi mobile.</li>
+        </ul>
+      </section>
+
+      <section class="section-card conclusion_section">
+        <h3><i class="fas fa-check-circle icon-accent"></i>Kesimpulan</h3>
+        <p>Sistem pakar ini memberikan solusi yang cukup baik dalam membantu pengguna mengidentifikasi jenis kulit wajah mereka 
+          dengan metode Certainty Factor. Dengan akurasi 91%, sistem ini dapat menjadi alat bantu bagi individu maupun klinik kecantikan. 
+          Namun ada beberapa kekurangan yang perlu diperbaiki, untuk pengembangan lebih lanjut.</p>
+      </section>
+
+      <section class="thank_you_section">
+        <h3>Terima Kasih</h3>
+      </section>
+
+      <section class="section-card pdf_section">
+        <h3><i class="fas fa-file-pdf icon-accent"></i>Presentasi Slide (PDF)</h3>
+        <iframe src="files/review-jurnal-sistem-pakar.pdf"></iframe>
+      </section>
+
+      <footer>
+        <p>Review Jurnal Sistem Pakar</p>
+      </footer>
     </div>
-  </body>
+  </div>
+
+  <button class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const scrollTop = document.querySelector('.scroll-top');
+      if (window.pageYOffset > 300) {
+        scrollTop.classList.add('active');
+      } else {
+        scrollTop.classList.remove('active');
+      }
+    });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
 </html>
