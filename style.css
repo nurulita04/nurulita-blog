@@ -33,7 +33,8 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 5rem;
+  padding-left: clamp(1rem, 5vw, 5rem);
+  padding-right: clamp(1rem, 5vw, 5rem);
 }
 
 a {
@@ -86,7 +87,6 @@ nav li:hover {
   font-weight: 700;
 }
 
-
 #home {
   background: var(--dark-color);
   padding: 4rem 0; 
@@ -102,7 +102,6 @@ nav li:hover {
 .name_text {
   white-space: nowrap;
 }
-
 
 .home_content {
   display: grid;
