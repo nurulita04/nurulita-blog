@@ -108,7 +108,7 @@
     }
 
     .section-card {
-      margin: 2rem auto 4rem auto;
+      margin: 2rem 2rem 4rem 2rem;
       padding: 2.5rem;
       background: white;
       border-radius: 15px;
@@ -331,7 +331,7 @@
       }
 
       .section-card {
-        margin: 1.5rem auto 3rem auto;
+        margin: 1.5rem 1.5rem 3rem 1.5rem;
         padding: 1.5rem;
       }
 
@@ -360,7 +360,7 @@
       }
 
       .section-card {
-        margin: 1rem auto 2rem auto;
+        margin: 1rem 1rem 2rem 1rem;
         padding: 1rem;
       }
 
