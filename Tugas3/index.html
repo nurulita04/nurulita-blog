@@ -1,80 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parallax Website</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <section class="pimg1">
-      <div class="ptext">
-        <span class="textBg"> Parallax Website </span>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULUL Project Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">U</div>
+                <a href="#Home">WEB ULUL</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Profile">Profile</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="Home">
+            <div class="hero-content">
+                <h1>WELCOME!</h1>
+                <p>Selamat datang di website project kami! Kami adalah tim yang berdedikasi untuk menciptakan karya-karya terbaik dengan penuh passion dan kreativitas. Bergabunglah dengan kami dalam perjalanan menuju inovasi dan keunggulan. Mari bersama-sama membangun masa depan yang lebih baik melalui kolaborasi dan dedikasi yang tinggi.</p>
+            </div>
+        </section>
+
+        <section id="Profile">
+            <div class="container">
+                <h2 class="section-title">Member Profile</h2>
+                <div class="profile-grid">
+                    <div class="profile-card">
+                        <img src="./images/fotoNurul.jpg" alt="Nurulita Septiani">
+                        <h3>Nurulita Septiani</h3>
+                        <p>22110439</p>
+                    </div>
+                    <div class="profile-card">
+                        <img src="./images/fotoNur.jpg" alt="Nur Auliya Putri">
+                        <h3>Nur Auliya Putri</h3>
+                        <p>22110369</p>
+                    </div>
+                    <div class="profile-card">
+                        <img src="./images/fotoSalma.jpg" alt="Salma Salsabilla">
+                        <h3>Salma Salsabilla</h3>
+                        <p>22110387</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="About">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>Kami adalah tim yang terdiri dari lima mahasiswa yang bersemangat dalam bidang teknologi dan pengembangan web. Dengan latar belakang yang beragam, kami menghadirkan perspektif yang unik dalam setiap project yang kami kerjakan. Tim kami berkomitmen untuk memberikan solusi inovatif dan berkualitas tinggi.</p>
+                    <p>Setiap anggota tim memiliki keahlian khusus yang saling melengkapi, mulai dari design, programming, hingga project management. Kami percaya bahwa kolaborasi yang baik akan menghasilkan karya yang luar biasa. Bersama-sama, kami berusaha untuk terus belajar dan berkembang dalam menghadapi tantangan di era digital ini.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Gallery">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="./images/foto1.jpeg" alt="Foto 1">
+                        <div class="description">Pemandangan desa senja dengan arsitektur tradisional.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/foto2.jpeg" alt="FOto 2">
+                        <div class="description">Ilustrasi kucing pixel retro yang menggemaskan.</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/foto3.jpeg" alt="Foto 3">
+                        <div class="description">Matahari terbenam di pantai dengan siluet pohon.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="Contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Contact Us</h2>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <a href="https://www.instagram.com/nurulitaaas/">
+                            <i class="fab fa-instagram"></i>
+                            Nurulita Septiani
+                        </a>
+                    <li class="contact-item">
+                        <a href="https://www.instagram.com/nuraulp/">
+                            <i class="fab fa-instagram"></i>
+                            Nur Auliya Putri
+                        </a>
+                    </li>
+                    </li>
+                    <li class="contact-item">
+                        <a href="https://instagram.com/salmssall?igshid=YmMyMTA2M2Y=">
+                            <i class="fab fa-instagram"></i>
+                            Salma Salsabilla
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class="section section-light">
-      <h2>Section One</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aut
-        amet odio est laborum obcaecati perferendis! Mollitia officiis,
-        consectetur vitae laborum eos expedita reprehenderit nostrum tempore.
-        Atque laborum repudiandae adipisci nihil. Natus cum sapiente culpa
-        excepturi quasi magni quibusdam ipsum accusamus laborum, numquam odit!
-        Nisi repudiandae cumque incidunt tempora explicabo vero in corporis
-        provident quidem quisquam sit, asperiores ullam placeat ut iure pariatur
-        ratione laboriosam totam amet minus. Porro, quam quisquam explicabo
-        rerum labore, tempora officia eveniet mollitia iure a fugiat, magnam at.
-        Vero magni aliquam ea molestias omnis, quia fuga architecto maiores ut
-        magnam! Culpa, cum. Blanditiis, tempore temporibus.
-      </p>
-    </section>
-    <section class="pimg2">
-      <div class="ptext">
-        <span class="textBg"> Explore Nature</span>
-      </div>
-    </section>
-    <section class="section section-dark">
-      <h2>Section Two</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aut
-        amet odio est laborum obcaecati perferendis! Mollitia officiis,
-        consectetur vitae laborum eos expedita reprehenderit nostrum tempore.
-        Atque laborum repudiandae adipisci nihil. Natus cum sapiente culpa
-        excepturi quasi magni quibusdam ipsum accusamus laborum, numquam odit!
-        Nisi repudiandae cumque incidunt tempora explicabo vero in corporis
-        provident quidem quisquam sit, asperiores ullam placeat ut iure pariatur
-        ratione laboriosam totam amet minus. Porro, quam quisquam explicabo
-        rerum labore, tempora officia eveniet mollitia iure a fugiat, magnam at.
-        Vero magni aliquam ea molestias omnis, quia fuga architecto maiores ut
-        magnam! Culpa, cum. Blanditiis, tempore temporibus.
-      </p>
-    </section>
-    <section class="pimg3">
-      <div class="ptext">
-        <span class="textBg"> LOOK, DEEP INTO NATURE</span>
-      </div>
-    </section>
-    <section class="section section-dark">
-      <h2>Section Three</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam aut
-        amet odio est laborum obcaecati perferendis! Mollitia officiis,
-        consectetur vitae laborum eos expedita reprehenderit nostrum tempore.
-        Atque laborum repudiandae adipisci nihil. Natus cum sapiente culpa
-        excepturi quasi magni quibusdam ipsum accusamus laborum, numquam odit!
-        Nisi repudiandae cumque incidunt tempora explicabo vero in corporis
-        provident quidem quisquam sit, asperiores ullam placeat ut iure pariatur
-        ratione laboriosam totam amet minus. Porro, quam quisquam explicabo
-        rerum labore, tempora officia eveniet mollitia iure a fugiat, magnam at.
-        Vero magni aliquam ea molestias omnis, quia fuga architecto maiores ut
-        magnam! Culpa, cum. Blanditiis, tempore temporibus.
-      </p>
-    </section>
-    <section class="pimg1">
-      <div class="ptext">
-        <span class="textBg"> Do Some Coding </span>
-      </div>
-    </section>
-  </body>
+
+    <footer>
+        <p>&copy; 2024 Nurulita Septiani</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Active navigation highlight
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
